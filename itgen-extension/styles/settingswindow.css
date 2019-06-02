@@ -1,0 +1,77 @@
+#settingswindowmaindiv{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.44);;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10001;
+}
+
+#settingswindowbody{
+  position: relative;
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: calc(50vh - 150px);
+}
+
+.lineelem p{
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #1B1C4E;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.lineelem{
+  position: relative;
+  border-bottom: 1px solid #DBDFE0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  /* border: 1px solid #000; */
+}
+
+.lineelem input[type=checkbox] {
+  /* all: initial; */
+  display:none;
+}
+
+.lineelem input[type=checkbox] + label {
+  /* all: initial; */
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  display:inline-block;
+  padding: 0 0 0 0px;
+  background: url("checkboxfalse.svg") no-repeat;
+  height: 18px;
+  width: 18px;
+  background-size: 100%;
+}
+
+.lineelem input[type=checkbox]:checked + label {
+  /* all: initial; */
+  position: absolute;
+  right:0px;
+  background:url("checkboxtrue.svg") no-repeat;
+  height: 18px;
+  width: 18px;
+  display:inline-block;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+#settingsico{
+  background: url("settingsico.svg") no-repeat;
+  background-size: 85%;
+  width: 22px;
+  height: 22px;
+  margin: 18px;
+}

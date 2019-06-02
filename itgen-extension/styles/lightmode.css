@@ -1,0 +1,74 @@
+.gena-info-panel{
+    margin: 0px;
+    box-shadow: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.comments-lesson .gena-panel-body{
+    padding: 20px;
+}
+
+.gena-info-panel .gena-panel-title {
+    display: none;
+}
+
+.corner{
+    display: none;
+}
+
+.trainer-lesson-item .comments-lesson{
+    margin: 0px;
+}
+
+.comments-comment{
+    background-color: #F3F3F3;
+    border-radius: 5px;
+}
+
+.comments-comment .head .author {
+    background-color: #337ab7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.comments-comment a{
+    color:  #FFFFFF !important;
+}
+
+.author .text-muted{
+    color: #FFFFFF;
+}
+
+.comments-comment .body{
+    background-color: #F3F3F3;
+    padding: 0px;
+}
+
+.comments-comment-text{
+	margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gena-text-muted{
+	margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.pin{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*на весь блок */
+
+.panel-body{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-tabs li{
+    margin-left: 5px;
+    margin-top: 10px;
+}

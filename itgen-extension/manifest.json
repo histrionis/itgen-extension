@@ -1,0 +1,25 @@
+{
+    "name": "Itgen",
+    "description" : "",
+    "permissions": ["storage",
+        "activeTab",
+         "tabs"
+    ],
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "popup.png"
+    },
+    "web_accessible_resources":[ "styles/*"],
+    "content_scripts": [
+        {
+            "matches": [ "*://portal.itgen.io/*" ],
+            "js": ["content.js" ]
+        }
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+}

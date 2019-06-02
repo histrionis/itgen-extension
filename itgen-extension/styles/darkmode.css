@@ -1,0 +1,259 @@
+.gena-info-panel{
+    margin: 0px;
+    box-shadow: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.top-bar{
+    background-color: #272727;
+}
+
+.dropdown input[type=text]{
+    background-color: #212121;
+    border: 1px solid #212121;
+    color:  #C3C3C3;
+}
+
+.gena-navbar-link{
+	color: #C3C3C3 !important;
+}
+
+.gena-navbar-link:hover{
+	color: #E8E8E8 !important;
+}
+
+body{
+	background-color: #121212;
+}
+
+#settingsico{
+  background: url("settingsicolight.svg") no-repeat !important;
+  background-size: 85% !important;
+}
+
+.panel{
+  background-color: #272727;
+  border: 1px solid #212121;
+}
+
+.trainer-lesson-list-item{
+  background-color: #272727;
+  border: 1px solid #212121;
+}
+
+.trainer-lesson-list-item.selected{
+  background-color: #212121;
+  border-right: 3px solid #2E2E2E;
+}
+
+.trainer-lesson-list-item:hover:not(.selected) {
+    box-shadow: 0 0 5px 1px #212121;
+}
+
+.gena-info-panel{
+  background-color: #272727;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #212121;
+}
+
+.nav-tabs>li.active>a:hover{
+  background-color: #272727;
+  border-color: #212121 #212121 transparent;
+}
+
+.nav-tabs>li.active>a{
+  background-color: #272727;
+  border-color: #212121 #212121 transparent;
+}
+
+.trainer-lesson .right {
+    border-left: 1px solid #212121;
+}
+
+.trainer-lesson .trainer-lesson-heading{
+  background-color: #1C1C1C;
+  border-bottom: 1px solid #212121;
+}
+
+.trainer-lesson .child-item-heading{
+  background-color: #1C1C1C;
+  border-bottom: 1px solid #212121;
+}
+
+.close{
+  color: #2E2E2E;
+  text-shadow: initial;
+}
+
+.close:hover{
+  color: #2E2E2E;
+}
+
+.multiline-text{
+  color: #C7C7C7;
+}
+
+.slot-left a{
+  color: #C7C7C7;
+}
+
+.trainer-lesson-list-item{
+  color: #3B3B3B;
+}
+
+.gena-model-panel{
+  background-color:  #272727;
+  border: 1px solid  #212121;
+}
+
+.gena-model-panel .gena-panel-heading{
+  background-color:  #272727;
+  border-bottom: 1px solid #212121;
+  color: #9C9C9C;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a{
+  background-color:  #272727;
+  border-color: #212121 #212121 transparent;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus{
+  color: #C7C7C7;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover{
+  color: #6E6E6E;
+}
+
+.comments-lesson .gena-panel-body{
+    padding: 20px;
+}
+
+.gena-info-panel .gena-panel-title {
+    display: none;
+}
+
+.corner{
+    display: none;
+}
+
+.trainer-lesson-item .comments-lesson{
+    margin: 0px;
+}
+
+.comments-comment{
+    background-color: #2E2E2E;
+    border-radius: 5px;
+}
+
+.comments-comment .head .author {
+    background-color: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.comments-comment a{
+    color:  #6E6E6E !important;
+}
+
+.author .text-muted{
+    color: #6E6E6E;
+}
+
+.comments-comment .body{
+    background-color: #2E2E2E;
+    padding: 0px;
+}
+
+.comments-comment-text{
+	margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gena-text-muted{
+	margin-left: 10px;
+  margin-bottom: 10px;
+  color: #6E6E6E;
+}
+
+.pin{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.panel-body{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-tabs li{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.text-capitalize{
+  color: #6E6E6E;
+}
+
+textarea.form-control{
+  background-color: #212121 !important;
+  border: 1px solid #212121;
+  color: #C7C7C7;
+}
+
+.control-label{
+  color: #6E6E6E;
+}
+
+.trainer-lesson-desc .text-capitalize,
+.select-group-skype .text-muted{
+  color: #C7C7C7;
+}
+
+.skype{
+  color: #C7C7C7;
+}
+
+.trainer-lesson-item-title a{
+  color: #C7C7C7;
+  text-decoration: none;
+}
+
+.grid-calendar-item-cell .list-group-item{
+  background-color: #212121;
+}
+
+.grid-calendar-item-cell .list-group-item:hover{
+  background-color: #212121;
+
+}
+
+.panel-default>.panel-heading{
+  background-color: #1C1C1C;
+  border-bottom: 1px solid #1C1C1C;
+}
+
+.panel-default>.panel-heading .panel-title,
+.list-group-item span{
+  color: #C7C7C7;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active{
+  background-color: #272727;
+  color: #C7C7C7;
+  border: 1px solid #212121;
+}
