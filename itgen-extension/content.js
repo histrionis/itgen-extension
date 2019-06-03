@@ -197,42 +197,22 @@ function setSettingsIco(){
   navBar.insertBefore(settingsIcoElem, navBar.getElementsByClassName("gena-navbar-item-right").item(0));
 }
 
-window.chatOpened = false;
-window.chatId = 0;
 document.body.onkeydown = function(e){
   var itgenSettings = loadSettings();
   if(itgenSettings[settingsList[3][0]] == true){
     if(document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA"){
       var eventKeyCode = e.keyCode;
       if (eventKeyCode > 48 && eventKeyCode < 58){
-        var openChatId = eventKeyCode - 49;
-        if(chatOpened == false || chatId !== openChatId){
-          try{
-            var lessonList = document.getElementsByClassName("child-chat-button");
-            lessonList.item(openChatId).click();
-            chatOpened = true;
-            chatId = openChatId;
-          }catch(ex){
-            //nothing
-          }
-        }else{
-          try{
-            var closeBtn = document.getElementsByClassName("close btn-close-chat");
-            closeBtn.item(0).click();
-            chatOpened = false;
-          }catch(ex){
-            //nothing
-          }
+        var btnMuteId = eventKeyCode - 49;
+        try{
+          document.getElementsByClassName("trainer-lesson-list-item list-group-item").item(btnMuteId).getElementsByClassName("btn-videochat btn-mute").item(0).click();
+        }catch(ex){
+
         }
       }
       if(eventKeyCode == 67){
         var chatBtn = document.getElementsByClassName("chat-button");
         chatBtn.item(0).click();
-        if(chatOpened = false){
-          chatOpened = true;
-        }else{
-          chatOpened = false;
-        }
       }
     }
   }

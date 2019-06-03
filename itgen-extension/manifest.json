@@ -1,6 +1,6 @@
 {
-    "name": "Itgen",
-    "description" : "",
+    "name": "itgen-extension",
+    "description" : "Просто парочка дополнительных функций",
     "permissions": ["storage",
         "activeTab",
          "tabs"
