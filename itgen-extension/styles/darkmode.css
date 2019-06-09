@@ -257,3 +257,13 @@ textarea.form-control{
   color: #C7C7C7;
   border: 1px solid #212121;
 }
+
+textarea[name="comment-done"],
+textarea[name="comment-hw"]{
+  height: 50px !important;
+}
+
+textarea[name="text-for-parents"],
+textarea[name="comment-text"]{
+  height: 85px !important;
+}

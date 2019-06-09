@@ -61,8 +61,6 @@
     margin-top: 10px;
 }
 
-/*на весь блок */
-
 .panel-body{
     padding: 0px;
     margin-bottom: 0px;
@@ -71,4 +69,14 @@
 .nav-tabs li{
     margin-left: 5px;
     margin-top: 10px;
+}
+
+textarea[name="comment-done"],
+textarea[name="comment-hw"]{
+  height: 50px !important;
+}
+
+textarea[name="text-for-parents"],
+textarea[name="comment-text"]{
+  height: 85px !important;
 }
