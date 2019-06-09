@@ -5,7 +5,7 @@
         "activeTab",
          "tabs"
     ],
-    "version": "1.0",
+    "version": "1.2",
     "manifest_version": 2,
     "browser_action": {
       "default_icon": "popup.png"
@@ -13,7 +13,7 @@
     "web_accessible_resources":[ "styles/*"],
     "content_scripts": [
         {
-            "matches": [ "*://portal.itgen.io/*" ],
+            "matches": [ "*://portal.itgen.io/*", "*://staging.portal.itgen.io/*"],
             "js": ["content.js" ]
         }
     ],

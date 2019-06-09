@@ -17,7 +17,8 @@ var settingsList = [["newtheme", "Новая тема"],
 ["darkmode", "Тёмная темa"],
 ["lessonnotfinishalert", "Незавершенное занятие"],
 ["hotkey", "Горячие клавиши"],
-["autoskypecopy", "Копировать skype"]];
+["autoskypecopy", "Копировать skype"],
+["movechat", "Перетаскиваемый чат"]];
 
 function checkHashChange() {
   var oldCount = window.history.length;
@@ -83,13 +84,14 @@ function applySettings(itgenSettings){
 
     }
   }
-
-  if(itgenSettings.autoskypecopy == true){
-    document.body.onclick = checkSkypeClick;
+  if(itgenSettings.autoskypecopy == true || itgenSettings.movechat == true){
+    document.body.onclick = checkClickedElem;
   }
 }
 
-function checkSkypeClick(e){
+window.chatMove = false;
+
+function checkClickedElem(e){
   var clickedElem = e.target;
   if(clickedElem.className == "skype"){
     var itgenSettings = loadSettings();
@@ -97,7 +99,28 @@ function checkSkypeClick(e){
       var login = clickedElem.innerHTML.replace(/Skype: /, '');
       navigator.clipboard.writeText(login);
     }
+  }else if (clickedElem.className == "chat-title") {
+    var itgenSettings = loadSettings();
+    if(itgenSettings[settingsList[5][0]] == true){
+      clickedElem.style.transition =  "0.1s";
+      if(chatMove == false){
+        clickedElem.style.backgroundColor = "#5D94D4";
+        document.body.onmousemove = moveChat;
+        chatMove = true;
+      }else{
+        clickedElem.style.backgroundColor = "#4a76a8";
+        document.body.onmousemove = null;
+        chatMove = false;
+      }
+    }
   }
+}
+
+function moveChat(e){
+  var chatElem = document.getElementsByClassName("chat-window ui-resizable").item(0);
+  var chatWidth = chatElem.style.width.replace(/px/, '');
+  chatElem.style.top = (e.clientY - 10) + "px";
+  chatElem.style.left = (e.clientX - (chatWidth/2)) + "px";
 }
 
 function saveSettings(itgenSettings){
@@ -200,7 +223,7 @@ function setSettingsIco(){
 document.body.onkeydown = function(e){
   var itgenSettings = loadSettings();
   if(itgenSettings[settingsList[3][0]] == true){
-    if(document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA"){
+    if(document.activeElement.tagName == "BODY"){
       var eventKeyCode = e.keyCode;
       if (eventKeyCode > 48 && eventKeyCode < 58){
         var btnMuteId = eventKeyCode - 49;
